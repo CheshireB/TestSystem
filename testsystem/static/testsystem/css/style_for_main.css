@@ -1,0 +1,100 @@
+html, body {
+	font-family: -apple-system, BlinkMacSystemFont, 
+		"Segoe UI", "Roboto", "Oxygen", 
+		"Ubuntu", "Cantarell", "Fira Sans", 
+		"Droid Sans", "Helvetica Neue", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display:table;
+    width:100%;
+    height: 100%;
+}
+.inner {
+    display:table-row;
+}
+.column {
+    display:table-cell;
+}
+.left-column {
+    background:#3caa3c;
+    width: 50%;
+}
+.right-column {
+    background:#ffd35a;
+}
+
+.russian_btn{
+	padding: 20px 0;
+	font-size: 1.3rem;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+	width: calc(33.33% - 2 * 12px);
+	background: #ffd35a;
+	color: white;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	position: absolute;
+	top:45%;
+	right:50%;
+	max-width: 250px;
+}
+
+.math_btn{
+	padding: 20px 0;
+	font-size: 1.3rem;
+	text-align: center;
+	display: inline-block;
+	margin: 10px;
+	width: calc(33.33% - 2 * 12px);
+	background: #3caa3c;
+	color: white;
+	transition: all 0.5s ease;
+	cursor: pointer;
+	position: absolute;
+	top:45%;
+	max-width: 250px;
+}
+
+.math_btn:hover{
+	background: #29791B;
+}
+
+.russian_btn:hover{
+	background: #F1CC13; /*FFBF00*/
+}
+
+a {
+	font-size:16px;
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover, a:active{
+	text-decoration: none;
+	color:#fff;
+}
+
+p{
+	font-size: 2.3rem;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+}
+
+.bottom{
+	display:inline-block;
+	position: absolute;
+	bottom:0;
+	right:0;
+}
+
+.bork{
+	font-size:1.3em;
+	position: absolute;
+	bottom: 0;
+	right:15%;
+}

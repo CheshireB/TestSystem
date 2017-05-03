@@ -1,16 +1,77 @@
-{% load staticfiles %}
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>PROJECT TITLE</title>
-	<link rel="stylesheet" href="{%  static "testsystem/css/bootstrap.css" %}">
-	<link rel="stylesheet" href="{% static "testsystem/css/styles.css" %}">
-	<script src="{%  static "testsystem/build/scripts.js" %}" defer></script>
+	<title>MATH</title>
+	<link rel="stylesheet" href="{% static "testsystem/css/bootstrap.css" %}">
+	<link rel="stylesheet" href="{% static urlcss %}">
+	<script src="{% static "testsystem/build/scripts.js" %}" defer></script>
 </head>
 <body>
+	<header class="header">
+		<div class="centered">
+			<a href="about.html" class="header_enter">войти</a>
+			<h3 class="header_project-title">DOGES PASS EXAMS</h3>
+		</div>
+	</header>
+	<div class="lol">
+		<h1>ТЕСТЫ ЕГЭ ПО МАТЕМАТИКЕ</h1>
+	</div>
+	<main class="app-container centered">
+		
+		<section class="ready-variants">
+			<h2 class="title">Готовые варианты</h2>
 
+			<p class="hint">
+				Выбери любой из подготовленных нами вариантов и начинай тестирование по первой части экзамена
+			</p>
+			
+			<div class="variants-container">
+                {%  for i in xrange %}
+                    <a href="{%  url 'static_test' subjecteng forloop.counter %}"> <div id="myid" class="ready-variants__variant no-select">Вариант {{ forloop.counter }}</div> </a>
+                {%  endfor %}
+			</div>
+
+		</section>
+		
+		<section class="variants-generator">
+			<h2 class="title">Генератор вариантов</h2>
+
+			<p class="hint">
+				Выбери, какие задания и в каком количестве войдут в вариант, регулируя количество вопросов для каждого задания
+			</p>
+
+			<div class="tasks-container">
+                {% for i in nameoftasks %}
+				<section class="variants-generator__task">
+					<h4 id="genericmy" class="variants-generator__task__title">
+						{{ forloop.counter }}. {{ i.nameoftask }}
+					</h4>
+						 <div class="center">
+						  		<div class="input-group">
+						          <span class="input-group-btn">
+						              <button id="minusbutton" type="button" class="btn btn-default btn-number" data-type="minus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-minus"></span>
+						              </button>
+						          </span>
+						          <input id="number" type="text" name="quant[1]" class="form-control input-number" value="1" min="0" max="10">
+						          <span class="input-group-btn">
+						              <button id="plusbutton" type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+						                  <span class="glyphicon glyphicon-plus"></span>
+						              </button>
+						          </span>
+						      </div>
+						    </div>
+				</section>
+                {%  endfor %}
+			</div>
+			<div class="generate-btn no-select" id="generate-btn">
+				Сгенерировать!
+			</div>
+		</section>
+
+	</main>
 </body>
 </html>

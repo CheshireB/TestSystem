@@ -52,7 +52,7 @@ h3{
 .header {
 	padding: 10px 15px;
 	color: #fff;
-	background: #3caa3c;
+	background: #ffd35a;
 }
 
 .header__project-title {
@@ -75,7 +75,7 @@ h3{
 		"Segoe UI", "Roboto", "Oxygen", 
 		"Ubuntu", "Cantarell", "Fira Sans", 
 		"Droid Sans", "Helvetica Neue", sans-serif;
-	background: #90e490;
+	background: #FFE59F;
 	/*background: #79d883;*/
 	text-align: center;
 	color: #fff;
@@ -111,7 +111,7 @@ h1{
 .app-container h2 {
 	text-align: left;
 	margin-left: 10px;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-weight: normal;
 }
 
@@ -149,18 +149,18 @@ input{
 	font-size: 1.3rem;
 	text-align: center;
 	max-width: 230px;
-	background: #3caa3c;
+	background: #ffd35a;
 	color: white;
 	transition: all 0.5s ease;
 	cursor: pointer;
 }
 
 .answer-btn:hover {
-	background: #29791B;
+	background: #F1CC13;
 }
 
 .answer-btn:active {
-	background: #3caa3c; 
+	background: #ffd35a; 
 }
 
 .results-sheet{
@@ -183,23 +183,23 @@ input{
 .your-points{
 	float:left;
 	width: 40%;
-	border: 3px solid #3caa3c;
+	border: 3px solid #ffd35a;
 }
 
 .max-points{
 	float:right;
 	width: 40%;
-	border: 3px solid #3caa3c;
+	border: 3px solid #ffd35a;
 }
 
 table{
 	width:100%;
 	margin-top: 50px;
-	border: 3px solid #3caa3c;
+	border: 3px solid #ffd35a;
 	border-collapse: collapse;
 }
 td,th{
-	border: 1px solid #3caa3c;
+	border: 1px solid #ffd35a;
 	vertical-align: middle;
 	text-align: center;
 	width:50%;
@@ -214,128 +214,15 @@ td,th{
 	padding-right: 5px;
 }
 
-.wrong{
-	color: #E21824;
+h3{
+	font-style: italic;
 }
 
-
-/*---------------------------- Нахер не нужно ------------------------------------
-/**
- * Main section styles
- 
-.app-container {
-	background: #fff;
-	margin-top: -70px;
-	padding: 30px 20px;
-}
-
-.app-container h2 {
-	margin-left: 10px;
-	font-size: 1.7em;
+h4{
 	font-weight: normal;
 }
 
-.app-container .hint {
-	color: #888;
-	line-height: 1.4em;
-	font-size: 17px;
-	margin: 10px;
-}
 
-/**
- * Ready variants
- 
-.ready-variants {
-	margin: 20px 0 70px;
+.wrong{
+	color: #E21824;
 }
-
-.ready-variants__variant {
-	padding: 20px 0;
-	font-size: 1.3rem;
-	text-align: center;
-	display: inline-block;
-	margin: 10px;
-	width: calc(33.33% - 2 * 12px);
-	background: #3caa3c;
-	color: white;
-	transition: all 0.5s ease;
-	cursor: pointer;
-}
-.ready-variants__variant:hover {
-	background: #29791B;
-}
-.ready-variants__variant:active {
-	background: #3caa3c; 
-}
-@media (max-width: 800px) {
-	.ready-variants__variant {
-		width: calc(49.99% - 2 * 12px);
-	}
-}
-
-@media (max-width: 550px) {
-	.ready-variants__variant {
-		width: 100%;
-		margin: 10px 0;
-	}
-}
-
-/**
- * Variants-generator
- 
-.tasks-container {
-	border-color: #868e96;
-	border-width: 1px;
-	border-style: solid;
-}
-.variants-generator__task {
-	display: flex;
-}
-.variants-generator__task:not(:last-of-type) {
-	border-bottom-color: #868e96;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-.variants-generator__task__title {
-	margin: 7px;
-	box-sizing: border-box;
-	font-size: 1.25em;
-	padding: 5px 10px;
-	flex: 1;
-}
-.variants-generator__task__controller {
-	box-sizing: border-box;
-	padding: 10px 25px;
-	/*background: #dee2e6;
-	flex: 0 0 170px;
-}
-
-.generate-btn {
-	margin: 20px auto 40px auto;
-	padding: 15px 0;
-	font-size: 1.3rem;
-	text-align: center;
-	max-width: 230px;
-	background: #3caa3c;
-	color: white;
-	transition: all 0.5s ease;
-	cursor: pointer;
-}
-.generate-btn:hover {
-	background: #29791B;
-}
-.generate-btn:active {
-	background: #3caa3c; 
-}
-.center{
-	width: 150px;
- 	margin: 5px 15px 5px;
-}
-@media (max-width: 550px) {
-	.variants-generator__task {
-		display: block;
-	}
-}*/
-
-
-

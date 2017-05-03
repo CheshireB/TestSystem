@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import tasks, Subject, temp_test
+from .models import tasks, Subject
 
 
 class TasksAdmin(admin.ModelAdmin):
@@ -34,9 +34,7 @@ class SubjectAdmin (admin.ModelAdmin):
         'subject',
         'subjecteng'
     )
-class TempAdmin(admin.ModelAdmin):
-    list_display = ('id', 'subject', 'tasks')
 
-admin.site.register( temp_test, TempAdmin)
+
 admin.site.register( tasks, TasksAdmin)
 admin.site.register( Subject, SubjectAdmin)

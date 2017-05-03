@@ -1,8 +1,2 @@
-node_modules
 myvenv
 .idea
-/mysite/mysettings.py
-/mysite/__pycache__
-/api/__pycache__
-/testsystem/__pycache__
-

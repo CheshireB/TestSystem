@@ -1,15 +1,25 @@
-{% load staticfiles %}
-
+{%  load static %}
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-  	<script src="{% static "testsystem/scripts.js" %}" defer></script>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>MAIN</title>
+		<link rel="stylesheet" href='{%  static "testsystem/css/style_for_main.css" %}'>
+	</head>
+	<body>
+		<div class="container">
+    		<div class="inner">
+        		<div class="column left-column">
+        			<p>DOGES TEAM PRESENTS</p>
+        			<a id="russian" href="{% url 'info_subject' 'russian' %}"><div class="russian_btn">Русский</div></a>
+        		</div>
+        		<div class="column right-column">
+        			<a id="math" href="{% url 'info_subject' 'math' %}"><div class="math_btn">Математика</div></a>
+        			<img src="doge.png" class="bottom"></img>
+        			<p class="bork">Wow such test</p>
+        		</div>
+    		</div>
+    	</div>
+	</body>
 </html>
